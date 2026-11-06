@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3</title>
+</head>
+<body>
+    <div id="header" style="background-color: lightgray;">
+        <h1>Contact Form</h1>
+        <span>Fill out the form below to get in touch with us.</span>
+    </div>
+
+    <div id="content" style="background-color: aliceblue;">
+        <h2>Form</h2>
+        <form oninput="z.value=parseInt(x.value)">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="satisfaction">Satisfaction Level:</label><br>
+            <input id="x" type="range" min="0" max="10" step="1" value="0"><br>
+             =
+            <output name="z" for="x y"></output><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="calculator" style="background-color: lightyellow;">
+        <h2>Calculator</h2>
+        <form oninput="result.value = (parseFloat(num1.value) || 0) + (parseFloat(num2.value) || 0)">
+            <input type="number" id="num1" name="num1" placeholder="0">
+            <span>+</span>
+            <input type="number" id="num2" name="num2" placeholder="0">
+            <span>=</span>
+            <output name="result" for="num1 num2">0</output>
+        </form>
+    </div>
+
+    <div id="footer" style="background-color: lightgray;">
+        <p>&copy; 2026 Your Company. All rights reserved.</p>
+    </div>
+</body>
+</html>
