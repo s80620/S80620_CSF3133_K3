@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <h2>Table 1</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Amier Yush</td>
+            <td>Mathematics</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Yush Amier</td>
+            <td>Science</td>
+            <td>A+</td>
+        </tr>
+    </table>
+        
+    <br>
+
+    <h2>Table 2</h2>
+    <table border = "1">
+            <tr>
+                <th colspan = "2">Student Information</th>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td>Amier Yush</td>
+            </tr>
+
+            <tr>
+                <td colspan = "2">Mathematics A+</td>
+            </tr>
+    </table>
+
+    <h2>Registration Form</h2>
+    <form action="submit_form.php" method="post">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="firstname"><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lastname"><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="hobby">Select your hobbies:</label><br>
+        <input type="checkbox" id="hobby1" name="hobby1" value="Football">
+        <label for="hobby1">Football</label><br>
+
+        <input type="checkbox" id="hobby2" name="hobby2" value="Futsal">
+        <label for="hobby2">Futsal</label><br><br>
+
+        <label for="country">Choose a country:</label>
+        <select id="country" name="country">
+            <option value="mas">Malaysia</option>
+            <option value="fran">France</option>
+            <option value="Bra">Brazil</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+</body>
+</html>
