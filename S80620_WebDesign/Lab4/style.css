@@ -1,0 +1,163 @@
+/* General Page Styling and Responsive Width */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #F4F9F9;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* Headings Text Decoration */
+h2 {
+    text-decoration: underline;
+    color: #004D40;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #00796B;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Interactive Link States in Exact Order: link -> visited -> hover -> active */
+a:link {
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: #E0F2F1;
+}
+
+nav ul li a:hover,
+a:hover {
+    background-color: #FF8F00;
+    color: #000000;
+}
+
+a:active {
+    color: #D32F2F;
+}
+
+/* Footer Link Overrides so links remain visible on dark footer */
+footer a:link {
+    color: #80CBC4;
+}
+
+footer a:visited {
+    color: #B2DFDB;
+}
+
+footer a:hover {
+    color: #FFD54F;
+    background-color: transparent;
+}
+
+footer a:active {
+    color: #FF8A65;
+}
+
+/* Section ID Selectors */
+#destinations {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #CCCCCC;
+}
+
+#video {
+    background-color: #E0F2F1;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #B2DFDB;
+}
+
+#trip {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #CCCCCC;
+}
+
+/* Class Selectors for Destination Cards and Prices */
+.card {
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #757575;
+    font-size: 14px;
+}
+
+.new-price {
+    color: #D32F2F;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.seat-status {
+    padding: 10px;
+    background-color: #FFF8E1;
+    border: 1px solid #FFE082;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Responsive Video Rule */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Trip Interest Form Styling */
+.trip-form {
+    background-color: #F1F8E9;
+    padding: 20px;
+    border: 2px solid #81C784;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.btn-submit {
+    background-color: #004D40;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    background-color: #00796B;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #004D40;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

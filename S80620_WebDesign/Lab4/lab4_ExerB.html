@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>e-Café Campus</title>
+    <style>
+        /* Navigation bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        a:link {color: #1A5276;}
+        a:visited {color: #7D3C98;}
+        a:hover {color: #E67E22;}
+        a:active {color: #C0392B;}
+        h1 {text-decoration: overline;}
+        p {color: #333333; text-align: justify;}
+        #intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+    </style>
+</head>
+<body>
+    <!-- Error 1 (Line 7): Used HTML comment syntax inside <style> instead of CSS comment /* ... */ -->
+    <!-- Error 2 (Line 9): Invalid value "no" for list-style-type; changed to "none" -->
+    <!-- Error 3 (Lines 14-15): Wrong link state order (a:hover before a:visited); swapped to LVHA order -->
+    <!-- Error 4 (Line 17): Invalid text-decoration value "overlined"; changed to "overline" -->
+    <!-- Error 5 (Line 18): Missing colon after "color" property in p rule; added colon -->
+    <!-- Error 6 (Line 21): Missing closing curly brace "}" for the #intro selector block -->
+    <!-- Error 7 (Line 22): Missing dot "." before class selector "highlight"; changed to ".highlight" -->
+    <!-- Error 8 (Line 34): Missing "#" in href="menu" internal link; changed to href="#menu" -->
+    <!-- Error 9 (Line 41): Mismatched selector attribute class="intro" for #intro CSS rule; changed to id="intro" -->
+    <!-- Error 10 (Lines 42 & 46): Duplicate id="item" attributes; changed to class="item" -->
+    <!-- Error 11 (Line 53): Missing "controls" attribute on <video> tag so video cannot be played -->
+    <!-- Error 12 (Line 54): Invalid MIME type="mp4" on <source>; changed to type="video/mp4" -->
+
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="menu">
+        <h2>Today's Menu</h2>
+        <p id="intro">Freshly brewed coffee and local delights every day.</p>
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <p>Only <span class="highlight">RM 3.50</span></p>
+        </article>
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>Only <span class="highlight">RM 5.00</span></p>
+        </article>
+    </section>
+    <section id="video">
+        <h2>Watch Our Story</h2>
+        <video width="400" height="300" controls>
+            <source src="cafe.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+    <style type="text/css">
+        #header {
+            background-color: #d6cfcf;
+            text-align: center;
+            text-decoration: underline;
+            color: rgb(219, 23, 138);
+        }
+
+        #navigation {
+            background-color: #cfd6d0;
+            text-align: center;
+        }
+
+        #navigation li:hover {
+            background-color: #28048b;
+        }
+
+        #navigation li:visited {
+            background-color: #4bdff3;
+        }
+
+        #navigation li:active {
+            background-color: #f3ef08;
+        }
+
+        video {
+            display: block;
+            margin: 0 auto;
+            border: 5px solid #bef106;
+        }
+
+        h2 {
+            color: #df0000;
+            text-decoration: line-through;
+        }
+
+        #form {
+            background-color: #fdfdfd;
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        #form label {
+            color:#564bf3;
+        }
+
+        #form input {
+            padding : 5px;
+            margin : 10px;
+        }
+
+        #form input[type="submit"] {
+            margin: 20px;
+            padding: 5 px;
+            color: rgb(10, 15, 13);
+            background-color:#f34b4b;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Sukan Di Taman</h1>
+        <p>Sukan yang diadakan di taman</p>
+    </header>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Laman Utama</a></li>
+            <li><a href="lab4.html">Lab 4</a></li>
+            <li><a href="class.html">Class</a></li>
+        </ul>
+    </nav>
+
+    <section id="content">
+        <h2>Senarai Sukan</h2>
+        <ul>
+            <li>Futsal</li>
+            <li>Badminton</li>
+            <li>Ping Pong</li>
+            <li>Sepak Takraw</li>
+        </ul>
+    </section>
+
+    <article id="article">
+        <h2>Maklumat Sukan</h2>
+        <video width="400" height="300" controls>
+            <source src="neymar.mp4" type="video/mp4">
+            Pelayar anda tidak menyokong tag video.
+        </video>
+        <p>Sukan adalah aktiviti fizikal yang melibatkan pergerakan badan dan biasanya dilakukan untuk keseronokan, kesihatan, atau persaingan. Terdapat pelbagai jenis sukan yang boleh dilakukan di taman, termasuk futsal, badminton, ping pong, dan sepak takraw.</p>   
+    </article>
+
+    <h2>Join Now</h2>
+    <form id="form" action="video.html" method="post">
+        <h2>Hubungi Kami</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Gender</option>
+            <option value="male">Men</option>
+            <option value="female">Women</option>
+        </select><br><br>
+
+        <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" id="hobby1" name="hobbies" value="futsal">
+        <label for="hobby1">Futsal</label>
+
+        <input type="checkbox" id="hobby2" name="hobbies" value="badminton">
+        <label for="hobby2">Badminton</label>
+
+        <input type="checkbox" id="hobby3" name="hobbies" value="pingpong">
+        <label for="hobby3">Ping Pong</label>
+
+        <input type="checkbox" id="hobby4" name="hobbies" value="sepaktakraw">
+        <label for="hobby4">Sepak Takraw</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer id="footer">
+        <p>&copy; 2026 Sukan Di Taman. Hak cipta terpelihara.</p>
+    </footer>
+</body>
+</html>
