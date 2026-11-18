@@ -1,0 +1,142 @@
+/* General page styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  background-image: url("paper.gif");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+/* Heading font and paragraph spacing */
+h1,
+h2 {
+  font-family: "Merriweather", serif;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  padding: 65px 20px;
+  color: white;
+  text-align: center;
+  background-color: #1b4f72;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("books.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+/* Horizontal navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+nav li a:hover,
+nav li a:focus-visible {
+  background-color: #111;
+}
+
+nav li a.active {
+  background-color: #047a4e;
+}
+
+/* Main content */
+main {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 0 40px;
+}
+
+main h2 {
+  color: #1b4f72;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+/* Product table */
+#products {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#products td,
+#products th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#products th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #047a4e;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#products tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#products tbody tr:hover {
+  background-color: #ddd;
+}
+
+#products td:last-child {
+  text-align: right;
+}
+
+/* Footer */
+footer {
+  padding: 16px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+footer a {
+  color: #1b4f72;
+}
+
+/* Small screens */
+@media (max-width: 500px) {
+  #products {
+    min-width: 400px;
+  }
+}

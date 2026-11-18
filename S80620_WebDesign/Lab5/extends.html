@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Bookstore</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="extends.css">
+</head>
+<body>
+  <!--
+    Part 1: Errors in the original code
+
+    1. shop.html, line 7: rel="stylesheets" should be rel="stylesheet".
+    2. shop.html, lines 10–12: The style element belongs in the head,
+       not the body. Its centering rule is now in shop.css.
+    3. shop.html, line 18: color=#1B4F72 uses "=" instead of ":".
+       The final Part 2 header uses white text instead.
+    4. shop.html, line 20: id="product" does not match the CSS selector
+       #products. Changed the HTML id to "products".
+    5. shop.css, line 2: "Robotto" is misspelled; it should be "Roboto".
+    6. shop.css, line 4: "no repeat" should be "no-repeat".
+    7. shop.css, line 18: display: inline does not make the entire
+       padded navigation link a block. Changed it to display: block.
+    8. shop.css, line 23: li:a:hover is an incorrect selector.
+       Changed it to li a:hover.
+    9. shop.css, line 27: "collapsed" is invalid; use "collapse".
+    10. shop.css, line 34: nth-child(2) selects only the second row.
+        Use nth-child(even) for alternating rows.
+    11. shop.css, line 37: :hovered is invalid; use :hover.
+    12. shop.css, line 45: A semicolon is missing after #f1f1f1.
+    13. shop.html, lines 14–16: The links point to IDs that were not
+        present. Added matching home, books and contact IDs.
+  -->
+
+  <!-- Part 2: Header -->
+  <header id="home">
+    <h1>Campus Bookstore</h1>
+    <p>Textbooks, stationery and more for every student.</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a class="active" href="#home" aria-current="page">Home</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="books">
+      <h2>Our Products</h2>
+      <p>Browse our selection of useful items for your studies.</p>
+
+      <div class="table-container">
+        <table id="products">
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Category</th>
+              <th scope="col">Price (RM)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Web Design Basics</td><td>Textbook</td><td>45.00</td></tr>
+            <tr><td>A4 Notebook</td><td>Stationery</td><td>6.50</td></tr>
+            <tr><td>USB Drive 32GB</td><td>Gadget</td><td>25.00</td></tr>
+            <tr><td>Highlighter Set</td><td>Stationery</td><td>9.90</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    &copy; 2026 Campus Bookstore ·
+    <a href="mailto:bookstore@example.com">bookstore@example.com</a>
+  </footer>
+</body>
+</html>
